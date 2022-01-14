@@ -1,0 +1,82 @@
+.dashboard_setting {
+  flex: 0 1 80%;
+  & .dashboard_setting_top {
+    width: 100%;
+    height: 32.7rem;
+    background: #fff;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid rgba(106, 97, 111, 0.2);
+    border-radius: 10px;
+    & ul {
+      background: rgba(228, 50, 112, 0.04);
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      list-style-type: none;
+      padding: 10px;
+      & li {
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #6a616f;
+        &:first-of-type {
+          background: #ffffff;
+          border: 1px solid rgba(228, 50, 112, 0.2);
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  & .dashboard_setting_bottom {
+    display: flex;
+    margin-top: 10px;
+    background: #ffffff;
+    border: 1px solid rgba(106, 97, 111, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    & .dashboard_setting_bottom_right,
+    & .dashboard_setting_bottom_left {
+      flex: 1;
+      min-height: 400px;
+    }
+    & .dashboard_setting_bottom_left {
+      border-right: 1px solid rgba(106, 97, 111, 0.2);
+      padding: 20px 50px 20px 20px;
+      & form {
+        & .form_field {
+            margin-bottom:10px;
+          & input {
+            width: 100%;
+            height: 56px;
+            background: #ffffff;
+            border: 1px solid rgba(106, 97, 111, 0.2);
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 10px;
+          }
+          & label{
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #6A616F;
+            margin-bottom:10px;
+            display:inline-block;
+          }
+          & .phone_number_wrapper{
+              display:flex;
+              align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

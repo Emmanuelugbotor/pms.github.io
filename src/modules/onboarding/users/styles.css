@@ -1,0 +1,191 @@
+/* @font-face {
+    src: url('../../../assets//Rubik/static/Rubik-Black.ttf');
+} */
+*,*::after,*::before{
+    padding:0;
+    margin:0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-family: Rubik;
+}
+.register{
+    width:100%;
+    height:100vh;
+    display: flex;
+    padding:2rem;
+}
+.register .register_left,
+.register .register_right{
+    flex:1
+}
+.register .register_right{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.register .register_left{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    border-radius: 20px;
+}
+.register .register_left img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.register .register_right .form_wrapper{
+    width:60%;
+}
+.register .register_right .form_wrapper form .form_field{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:2rem;
+}
+.register .register_right .form_wrapper form .form_field.password_setup{
+
+}
+.register .register_right .form_wrapper form .form_field span.hint-pmx{
+margin-top:.5rem;
+}
+.register .register_right .form_wrapper form .form_field.forget_field-pmx{
+    margin-top:5rem;
+}
+.register .register_right .form_wrapper form .form_field input,
+.register .register_right .form_wrapper form .form_field select{
+    height:5rem;
+    padding:1rem;
+    background: rgba(106, 97, 111, 0.04);
+   border: 1px solid rgba(106, 97, 111, 0.2);
+   box-sizing: border-box;
+   border-radius: 1rem;
+   width:100%;
+}
+.register .register_right .form_wrapper form .form_field input.continue_button{
+    color:#fff;
+    background: #E43270;
+border-radius: 1rem;
+text-transform: capitalize;
+font-family: Rubik;
+font-style: normal;
+font-weight: bold;
+font-size: 2rem;
+line-height: 2.4rem;
+}
+.register .register_right .form_wrapper form .form_field label{
+    margin-bottom:.8rem;
+    font-size:1.8rem;
+    display:inline-block;
+    font-style: normal;
+font-weight: 300;
+font-size: 1.6rem;
+line-height: 1.9rem;
+text-transform: capitalize;
+color: #6A616F;
+}
+.register .register_right .form_wrapper .register_right_title,
+.register .register_right .form_wrapper p{
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #6A616F;
+    font-family: 'Rubik';
+}
+.register .register_right .form_wrapper .register_right_title{
+    font-style: normal;
+font-weight: bold;
+font-size: 36px;
+color: #6A616F;
+margin-bottom:2rem;
+}
+.register .register_right .form_wrapper p.register_right_quote-pmx{
+    color: #6A616F;
+}
+.register .register_right .form_wrapper form .form_field label.checkbox-pmx{
+    display: flex;
+    align-items: center;  
+}
+.register_right_title{
+    font-weight: bold;
+    font-family: 'Rubik';
+}
+.register .register_right .form_wrapper form .form_field label.checkbox-pmx span{
+    width:5rem;
+    height:2rem;
+    border:1px solid grey;
+    background-color: grey;
+    display:inline-block;
+    border-radius:1rem;
+    position:relative;
+    margin-right:1rem;  
+}
+.register .register_right .form_wrapper form .form_field label.checkbox-pmx span::after{
+    content:"";
+    width:2.5rem;
+    height:2.5rem;
+    position:absolute;
+    /* border:1px solid grey; */
+    border-radius:50%;
+    display:inline-block;
+    background-color: #fff;
+    box-shadow: 2px 3px 4px rgba(0,0,0,.5);
+    left:-3px;
+    top:-5px;
+    transition:transfrom 3s;
+}
+.register .register_right .form_wrapper form .form_field #checkbox-pmx{
+    display:none;
+}
+.register .register_right .form_wrapper form .form_field #checkbox-pmx:checked ~ label span::after{
+    transform: translateX(27px);
+}
+
+.register .register_right .form_wrapper p{
+    margin-bottom:3rem;
+}
+.register .register_right .form_wrapper p.forget_password-pmx{
+    color: #E43270;
+}
+.click_here_btn{
+    cursor: pointer;
+}
+.register .register_right .form_wrapper p.incorrect_details{
+    cursor: pointer;
+}
+.register .register_right .form_wrapper form .form_field ul{
+    list-style-type:none;
+    padding:0;
+    margin-top:1.8rem;
+}
+.register .register_right .form_wrapper form .form_field ul li{
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 300;
+   font-size: 14px;
+   line-height: 17px;
+   text-align: center;
+   color: #6A616F;
+   margin-bottom:1rem;
+}
+.register .register_right .form_wrapper form .form_field ul li span{
+    width:1rem;
+    height:1rem;
+    border-radius:50%;
+    background: #45E71D;
+    margin-right:1rem;
+}
+.register .register_right .form_wrapper form .form_field ul li:last-of-type span{
+    background: #FF0000;
+}
+.icon-pmx{
+    text-decoration: none;
+}

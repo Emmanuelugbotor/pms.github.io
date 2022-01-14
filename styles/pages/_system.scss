@@ -1,0 +1,27 @@
+.dashboard__main-pmx{
+    width: 397px !important;
+    background-color: #191919; 
+    & li.dashboard__item-pmx{
+        
+        border-radius: 1rem;
+        width: 100% !important;
+        height:5rem;
+        margin-bottom:1rem;
+        color: #FFFFFF;
+        // padding-left:.5rem;
+        & a{
+            display: flex !important;;
+        align-items: center;
+        width: 100% !important;
+        }
+        & span{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2rem!important;
+            line-height: 2.4rem;
+        }
+        &:first-of-type{
+            background: #E43270;
+        }
+    }
+}
