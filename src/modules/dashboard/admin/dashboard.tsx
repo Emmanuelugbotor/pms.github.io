@@ -5,7 +5,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import PeopleIcon from '@mui/icons-material/People';
 import dashboardImage from '../../../assets/Rectangle_276.png'
 import { useState } from "react";
-import Sidebar from "../../../layout/admin/dashboard_sidebar";
+import Wrapper from "../../../layout/admin/dashboard_sidebar";
 
 export default function Dashboard() {
   const [toggle, setToggle] = useState(false);
@@ -15,9 +15,8 @@ export default function Dashboard() {
   }
   return (
 
-    <div className="dashboard">
-
-      <Sidebar />
+    
+      <Wrapper>
 
       <div className="dashboard_right">
         <div className="dashboard_right_top">
@@ -101,7 +100,7 @@ export default function Dashboard() {
           </div>
       </div>
 
-
-    </div>
+      </Wrapper>
+      
   );
 }
