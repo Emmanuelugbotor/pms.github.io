@@ -1,0 +1,52 @@
+.role_management {
+  & .role_management_button_wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 39px;
+    margin-bottom: 28px;
+    & .role_management_button {
+      width: 386px;
+      height: 56px;
+      background: #fad6e2;
+      display: flex;
+      align-items: center;
+      position: relative;
+      box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      &::after {
+        content: "Roles";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: #e43270;
+        border-radius: 10px;
+        top: 0;
+        left: 0%;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      &.toggle::after {
+        content: "Approval flow";
+        left: 50%;
+      }
+      & span {
+        flex: 1;
+        color: #fff;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        color: #e43270;
+        text-align: center;
+      }
+    }
+  }
+}

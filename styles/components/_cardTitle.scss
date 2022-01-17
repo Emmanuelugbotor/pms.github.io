@@ -1,0 +1,17 @@
+.subsidiaryCreatedpopup_card_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 29px;
+  border-bottom: 1px solid rgba(106, 97, 111, 0.2);
+  & span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #6a616f;
+  }
+}

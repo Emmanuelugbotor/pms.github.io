@@ -1,0 +1,122 @@
+.add_New_Branches {
+  margin-top: 28px;
+  margin-left: 25px;
+  margin-right: 45px;
+  padding-bottom: 26px;
+  & form {
+    margin-left: 30px;
+    & .form_wrapper {
+      display: flex;
+      & .form_field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 34px;
+        margin-right: 45px;
+        &.department_select {
+          & select {
+            width: 484px;
+            height: 56px;
+            border: 1px solid rgba(106, 97, 111, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: #6a616f;
+          }
+        }
+        & .phone_number_wrapper {
+          display: flex;
+          align-items: center;
+          & select {
+            height: 56px;
+            width: 119px;
+            margin-right: 18px;
+            background: #ffffff;
+            border: 1px solid rgba(106, 97, 111, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: #6a616f;
+          }
+          & input {
+            width: 347px;
+          }
+        }
+        & input {
+          background: #ffffff;
+          border: 1px solid rgba(106, 97, 111, 0.2);
+          box-sizing: border-box;
+          border-radius: 10px;
+          width: 484px;
+          height: 56px;
+          padding: 10px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 21px;
+
+          color: #6a616f;
+        }
+        & label {
+          margin-bottom: 7px;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+          color: #6a616f;
+        }
+        & select.last_select {
+          height: 56px;
+          width: 484px;
+          background: #ffffff;
+          border: 1px solid rgba(106, 97, 111, 0.2);
+          box-sizing: border-box;
+          border-radius: 10px;
+          padding: 10px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 21px;
+          color: #6a616f;
+
+          & option {
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+.buttons {
+  margin-top: 35px;
+  & button {
+    width: 154px;
+    height: 56px;
+    background: #e43270;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    &.department_btn {
+      width: 184px;
+    }
+    &:last-child {
+      background: rgba(228, 50, 112, 0.2);
+      color: #e43270;
+      margin-left: 21px;
+    }
+  }
+}

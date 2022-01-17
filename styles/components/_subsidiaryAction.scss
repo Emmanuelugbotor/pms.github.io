@@ -1,0 +1,23 @@
+.subsidiary_action {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  width: 23.3rem;
+  height: 21.2rem;
+  ul {
+    background: #ffffff;
+    border: 1px solid rgba(106, 97, 111, 0.5);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    & li {
+      height: 6.4rem;
+      width: 100%;
+      font-size: 1.6rem;
+      color: #6a616f;
+      padding: 30px 0 17.82px 0px;
+      &:not(:last-of-type) {
+        border-bottom: 1px solid grey;
+      }
+    }
+  }
+}

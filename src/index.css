@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: inherit; }
@@ -6,6 +8,540 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+:root {
+  --primary-color: #e43270; }
+
+.subsidiary {
+  padding-bottom: 20px; }
+  .subsidiary .role_management_heading_search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 30px; }
+    .subsidiary .role_management_heading_search .role_management_heading {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #6a616f; }
+    .subsidiary .role_management_heading_search .role_management_heading_s-csv {
+      display: flex;
+      align-items: center; }
+      .subsidiary .role_management_heading_search .role_management_heading_s-csv input,
+      .subsidiary .role_management_heading_search .role_management_heading_s-csv .new_role {
+        width: 184px;
+        height: 56px;
+        padding: 10px; }
+      .subsidiary .role_management_heading_search .role_management_heading_s-csv input {
+        background: #ffffff;
+        border: 1px solid rgba(106, 97, 111, 0.2);
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-right: 88px; }
+      .subsidiary .role_management_heading_search .role_management_heading_s-csv .new_role {
+        width: 176px;
+        background: #e43270;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #ffffff; }
+  .subsidiary .subsidiary_heading {
+    margin: 2.8rem 0 0 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #6a616f; }
+  .subsidiary .subsidiary_search_new_subsidiary {
+    display: flex;
+    justify-content: space-between;
+    margin: 5.9rem 3rem 0 2.5rem; }
+    .subsidiary .subsidiary_search_new_subsidiary input[type="search"] {
+      width: 18.4rem;
+      height: 5.6rem;
+      border: 1px solid rgba(106, 97, 111, 0.2);
+      border-radius: 10px;
+      padding: 18px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      color: #6a616f; }
+    .subsidiary .subsidiary_search_new_subsidiary .new_subsidiary {
+      width: 21.5rem;
+      height: 5.6rem;
+      background: #e43270;
+      border-radius: 10px;
+      padding: 18px 25px 17px 17px;
+      display: flex;
+      align-items: center; }
+      .subsidiary .subsidiary_search_new_subsidiary .new_subsidiary span {
+        display: inline-block;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #ffffff; }
+      .subsidiary .subsidiary_search_new_subsidiary .new_subsidiary .add {
+        color: #ffffff;
+        margin-right: 10px; }
+  .subsidiary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 62px; }
+    .subsidiary table th {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #6a616f; }
+    .subsidiary table td {
+      padding: 21px 0 16px 0; }
+      .subsidiary table td.subsidiary_parent {
+        position: relative; }
+  .subsidiary ul.pagination_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2.4rem; }
+    .subsidiary ul.pagination_wrapper li {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid grey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      margin-left: 10px; }
+      .subsidiary ul.pagination_wrapper li span {
+        font-size: 16px; }
+      .subsidiary ul.pagination_wrapper li.current {
+        background: #e43270; }
+        .subsidiary ul.pagination_wrapper li.current span {
+          color: #fff; }
+
+.subsidiary_action {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  width: 23.3rem;
+  height: 21.2rem; }
+  .subsidiary_action ul {
+    background: #ffffff;
+    border: 1px solid rgba(106, 97, 111, 0.5);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; }
+    .subsidiary_action ul li {
+      height: 6.4rem;
+      width: 100%;
+      font-size: 1.6rem;
+      color: #6a616f;
+      padding: 30px 0 17.82px 0px; }
+      .subsidiary_action ul li:not(:last-of-type) {
+        border-bottom: 1px solid grey; }
+
+.create_subsidiary {
+  padding: 0 45px 41px 34px;
+  margin-top: 2.8rem; }
+  .create_subsidiary form .form_wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px; }
+    .create_subsidiary form .form_wrapper .form_field {
+      display: flex;
+      width: 484px;
+      flex-direction: column;
+      margin-right: 46px; }
+      .create_subsidiary form .form_wrapper .form_field select {
+        height: 56px;
+        border: 1px solid rgba(106, 97, 111, 0.2);
+        border-radius: 10px; }
+      .create_subsidiary form .form_wrapper .form_field .phone_number_wrapper {
+        display: flex;
+        align-items: center; }
+        .create_subsidiary form .form_wrapper .form_field .phone_number_wrapper select {
+          height: 56px;
+          width: 119px;
+          border: 1px solid rgba(106, 97, 111, 0.2);
+          border-radius: 10px;
+          margin-right: 18px; }
+      .create_subsidiary form .form_wrapper .form_field input {
+        background: #ffffff;
+        border: 1px solid rgba(106, 97, 111, 0.2);
+        box-sizing: border-box;
+        border-radius: 10px;
+        height: 56px;
+        width: 100%;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #6a616f;
+        padding-left: 10px; }
+      .create_subsidiary form .form_wrapper .form_field label {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #6a616f;
+        margin-bottom: 7px; }
+  .create_subsidiary form .buttons button {
+    width: 18.4rem;
+    height: 5.6rem;
+    border: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 10px;
+    color: #ffffff;
+    background: var(--primary-color); }
+    .create_subsidiary form .buttons button:last-of-type {
+      background: rgba(228, 50, 112, 0.2);
+      color: #e43270;
+      margin-left: 21px; }
+
+.subsidiaryCreatedpopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(194, 182, 182, 0.3);
+  backdrop-filter: blur(3px); }
+  .subsidiaryCreatedpopup .subsidiaryCreatedpopup_card {
+    width: 757px;
+    min-height: 585px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding-bottom: 10px; }
+    .subsidiaryCreatedpopup .subsidiaryCreatedpopup_card .subsidiaryCreatedpopup_card_content {
+      margin-top: 28px;
+      padding-left: 56px;
+      border-bottom: 1px solid rgba(106, 97, 111, 0.2);
+      padding-bottom: 40px; }
+      .subsidiaryCreatedpopup .subsidiaryCreatedpopup_card .subsidiaryCreatedpopup_card_content form .form_wrapper {
+        display: flex;
+        align-items: center; }
+        .subsidiaryCreatedpopup .subsidiaryCreatedpopup_card .subsidiaryCreatedpopup_card_content form .form_wrapper .form_field {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 21px; }
+          .subsidiaryCreatedpopup .subsidiaryCreatedpopup_card .subsidiaryCreatedpopup_card_content form .form_wrapper .form_field:first-child {
+            margin-right: 66px; }
+          .subsidiaryCreatedpopup .subsidiaryCreatedpopup_card .subsidiaryCreatedpopup_card_content form .form_wrapper .form_field input {
+            width: 268px;
+            height: 56px;
+            background: #f3f3f3;
+            border: 1px solid rgba(106, 97, 111, 0.2);
+            border-radius: 10px;
+            padding: 17px 18px 10px 22px; }
+            .subsidiaryCreatedpopup .subsidiaryCreatedpopup_card .subsidiaryCreatedpopup_card_content form .form_wrapper .form_field input.form_branch {
+              width: 134px; }
+          .subsidiaryCreatedpopup .subsidiaryCreatedpopup_card .subsidiaryCreatedpopup_card_content form .form_wrapper .form_field label {
+            margin-bottom: 16px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: #6a616f; }
+      .subsidiaryCreatedpopup .subsidiaryCreatedpopup_card .subsidiaryCreatedpopup_card_content form .update {
+        margin-top: 66px; }
+        .subsidiaryCreatedpopup .subsidiaryCreatedpopup_card .subsidiaryCreatedpopup_card_content form .update h3 {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 21px;
+          color: #6a616f;
+          margin-bottom: 15px; }
+        .subsidiaryCreatedpopup .subsidiaryCreatedpopup_card .subsidiaryCreatedpopup_card_content form .update h1 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 21px;
+          color: #6a616f;
+          margin-bottom: 7px; }
+        .subsidiaryCreatedpopup .subsidiaryCreatedpopup_card .subsidiaryCreatedpopup_card_content form .update p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 21px;
+          color: #6a616f; }
+
+.subsidiaryCreatedpopup_card_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 29px;
+  border-bottom: 1px solid rgba(106, 97, 111, 0.2); }
+  .subsidiaryCreatedpopup_card_title span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #6a616f; }
+
+.subsidiaryCreatedpopup_card_footer {
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px; }
+  .subsidiaryCreatedpopup_card_footer button {
+    width: 168px;
+    height: 56px;
+    background: #e43270;
+    border-radius: 10px;
+    border: none;
+    color: #fff; }
+
+.view_branch_details_card {
+  width: 1109px;
+  height: 695px;
+  background: #ffffff;
+  border-radius: 16px; }
+  .view_branch_details_card.department_card {
+    height: 577px; }
+    .view_branch_details_card.department_card .update {
+      margin-top: 41px; }
+  .view_branch_details_card .view_branch_details_card_content {
+    padding-left: 56px;
+    margin-top: 28px;
+    border-bottom: 1px solid rgba(106, 97, 111, 0.2);
+    padding-bottom: 40px; }
+    .view_branch_details_card .view_branch_details_card_content form .form_wrapper {
+      display: flex;
+      align-items: center; }
+      .view_branch_details_card .view_branch_details_card_content form .form_wrapper .form_field {
+        display: flex;
+        flex-direction: column;
+        margin-right: 76px;
+        margin-bottom: 26px; }
+        .view_branch_details_card .view_branch_details_card_content form .form_wrapper .form_field label {
+          margin-bottom: 16px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 21px;
+          color: #6a616f; }
+        .view_branch_details_card .view_branch_details_card_content form .form_wrapper .form_field input {
+          width: 268px;
+          height: 56px;
+          background: #f3f3f3;
+          border: 1px solid rgba(106, 97, 111, 0.2);
+          box-sizing: border-box;
+          border-radius: 10px; }
+        .view_branch_details_card .view_branch_details_card_content form .form_wrapper .form_field.last {
+          margin-top: 36px; }
+          .view_branch_details_card .view_branch_details_card_content form .form_wrapper .form_field.last input {
+            width: 793px; }
+    .view_branch_details_card .view_branch_details_card_content .update {
+      color: #6a616f;
+      font-size: 18px;
+      line-height: 21px; }
+      .view_branch_details_card .view_branch_details_card_content .update h3 {
+        font-style: normal;
+        font-weight: normal;
+        margin-bottom: 15px; }
+      .view_branch_details_card .view_branch_details_card_content .update h1 {
+        font-style: normal;
+        font-weight: bold;
+        margin-bottom: 8px; }
+      .view_branch_details_card .view_branch_details_card_content .update p {
+        font-style: normal;
+        font-weight: normal; }
+
+.title_import-csv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.3rem; }
+  .title_import-csv .title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #6a616f; }
+  .title_import-csv .import_csv {
+    display: flex;
+    align-items: center; }
+    .title_import-csv .import_csv span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      display: inline-block;
+      color: #e43270; }
+
+.add_New_Branches {
+  margin-top: 28px;
+  margin-left: 25px;
+  margin-right: 45px;
+  padding-bottom: 26px; }
+  .add_New_Branches form {
+    margin-left: 30px; }
+    .add_New_Branches form .form_wrapper {
+      display: flex; }
+      .add_New_Branches form .form_wrapper .form_field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 34px;
+        margin-right: 45px; }
+        .add_New_Branches form .form_wrapper .form_field.department_select select {
+          width: 484px;
+          height: 56px;
+          border: 1px solid rgba(106, 97, 111, 0.2);
+          border-radius: 10px;
+          padding: 10px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 21px;
+          color: #6a616f; }
+        .add_New_Branches form .form_wrapper .form_field .phone_number_wrapper {
+          display: flex;
+          align-items: center; }
+          .add_New_Branches form .form_wrapper .form_field .phone_number_wrapper select {
+            height: 56px;
+            width: 119px;
+            margin-right: 18px;
+            background: #ffffff;
+            border: 1px solid rgba(106, 97, 111, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: #6a616f; }
+          .add_New_Branches form .form_wrapper .form_field .phone_number_wrapper input {
+            width: 347px; }
+        .add_New_Branches form .form_wrapper .form_field input {
+          background: #ffffff;
+          border: 1px solid rgba(106, 97, 111, 0.2);
+          box-sizing: border-box;
+          border-radius: 10px;
+          width: 484px;
+          height: 56px;
+          padding: 10px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 21px;
+          color: #6a616f; }
+        .add_New_Branches form .form_wrapper .form_field label {
+          margin-bottom: 7px;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+          color: #6a616f; }
+        .add_New_Branches form .form_wrapper .form_field select.last_select {
+          height: 56px;
+          width: 484px;
+          background: #ffffff;
+          border: 1px solid rgba(106, 97, 111, 0.2);
+          box-sizing: border-box;
+          border-radius: 10px;
+          padding: 10px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 21px;
+          color: #6a616f; }
+          .add_New_Branches form .form_wrapper .form_field select.last_select option {
+            padding: 20px; }
+
+.select-selected {
+  background-color: DodgerBlue; }
+
+.buttons {
+  margin-top: 35px; }
+  .buttons button {
+    width: 154px;
+    height: 56px;
+    background: #e43270;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer; }
+    .buttons button.department_btn {
+      width: 184px; }
+    .buttons button:last-child {
+      background: rgba(228, 50, 112, 0.2);
+      color: #e43270;
+      margin-left: 21px; }
+
+.role_management .role_management_button_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 39px;
+  margin-bottom: 28px; }
+  .role_management .role_management_button_wrapper .role_management_button {
+    width: 386px;
+    height: 56px;
+    background: #fad6e2;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px; }
+    .role_management .role_management_button_wrapper .role_management_button::after {
+      content: "Roles";
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      background: #e43270;
+      border-radius: 10px;
+      top: 0;
+      left: 0%;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px; }
+    .role_management .role_management_button_wrapper .role_management_button.toggle::after {
+      content: "Approval flow";
+      left: 50%; }
+    .role_management .role_management_button_wrapper .role_management_button span {
+      flex: 1;
+      color: #fff;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+      color: #e43270;
+      text-align: center; }
 
 .dashboard__main-pmx {
   width: 397px !important;
@@ -233,68 +769,124 @@ td {
           border: 1px solid rgba(228, 50, 112, 0.2);
           border-radius: 10px; }
   .dashboard_setting .dashboard_setting_bottom {
-    display: flex;
     margin-top: 10px;
     background: #ffffff;
     border: 1px solid rgba(106, 97, 111, 0.2);
-    border-radius: 10px;
-    overflow: hidden; }
-    .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_right,
-    .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_left {
-      flex: 1;
-      min-height: 400px; }
-    .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_left {
-      border-right: 1px solid rgba(106, 97, 111, 0.2);
-      padding: 20px 50px 20px 20px; }
-      .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_left form .form_button {
-        display: flex;
-        align-items: center; }
-        .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_left form .form_button button {
-          width: 18.4rem;
-          height: 5.6rem;
-          background: #e43270;
-          border-radius: 10px;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 18px;
-          line-height: 21px;
-          display: inline-block;
-          color: #ffffff;
-          border: none;
-          cursor: pointer; }
-          .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_left form .form_button button:last-of-type {
-            background: rgba(228, 50, 112, 0.2);
-            color: #e43270;
-            margin-left: 2.1rem; }
-      .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_left form .form_field {
-        margin-bottom: 3.4rem; }
-        .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_left form .form_field input {
-          width: 100%;
-          height: 56px;
-          background: #ffffff;
-          border: 1px solid rgba(106, 97, 111, 0.2);
-          box-sizing: border-box;
-          border-radius: 10px;
-          padding: 10px; }
-        .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_left form .form_field label {
+    border-radius: 10px; }
+    .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization {
+      display: flex; }
+      .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_right,
+      .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_left {
+        flex: 1;
+        min-height: 400px; }
+      .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_right {
+        padding: 60px 87px 20px 62px; }
+        .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_right .organization_logo_desc .title {
           font-family: Rubik;
           font-style: normal;
           font-weight: 300;
           font-size: 16px;
           line-height: 19px;
           color: #6a616f;
-          margin-bottom: 10px;
-          display: inline-block; }
-        .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_left form .form_field .phone_number_wrapper {
+          margin-bottom: 1.31rem; }
+        .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_right .organization_logo_desc .image {
+          width: 14.563rem;
+          height: 14.563rem;
+          border-radius: 50%;
+          background-color: #fff;
+          box-shadow: 2px 10px 14px 3px rgba(106, 97, 111, 0.2);
+          margin-bottom: 4.219rem; }
+        .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_right .theme_color .theme_color_title {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+          color: #6a616f;
+          margin-bottom: 1.2rem; }
+        .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_right .theme_color .theme_color-one {
+          width: 48.4rem;
+          height: 5.6rem;
+          background: #ffffff;
+          border: 1px solid rgba(106, 97, 111, 0.2);
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          padding: 1rem 0.9rem 1.1rem 3rem; }
+          .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_right .theme_color .theme_color-one p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #6a616f;
+            margin-right: 2.7rem; }
+          .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_right .theme_color .theme_color-one span {
+            width: 35.6rem;
+            height: 3.5rem;
+            display: inline-block;
+            background: #e43270;
+            border-radius: 10px; }
+          .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_right .theme_color .theme_color-one.two {
+            margin-top: 1.4rem; }
+            .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_right .theme_color .theme_color-one.two span {
+              background: #fad6e2; }
+      .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_left {
+        border-right: 1px solid rgba(106, 97, 111, 0.2);
+        padding: 60px 50px 71px 33px; }
+        .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_left form .form_button {
           display: flex;
           align-items: center; }
-          .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_left form .form_field .phone_number_wrapper select {
+          .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_left form .form_button button {
+            width: 18.4rem;
+            height: 5.6rem;
+            background: #e43270;
+            border-radius: 10px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            display: inline-block;
+            color: #ffffff;
+            border: none;
+            cursor: pointer; }
+            .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_left form .form_button button:last-of-type {
+              background: rgba(228, 50, 112, 0.2);
+              color: #e43270;
+              margin-left: 2.1rem; }
+        .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_left form .form_field {
+          margin-bottom: 3.4rem; }
+          .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_left form .form_field input {
+            width: 100%;
             height: 56px;
             background: #ffffff;
             border: 1px solid rgba(106, 97, 111, 0.2);
             box-sizing: border-box;
             border-radius: 10px;
-            margin-right: 10px;
-            flex: 0 1 20%; }
-          .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_left form .form_field .phone_number_wrapper input {
-            flex: 0 1 80%; }
+            padding: 10px; }
+            .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_left form .form_field input::-webkit-input-placeholder {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 21px;
+              color: #6a616f; }
+          .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_left form .form_field label {
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #6a616f;
+            margin-bottom: 10px;
+            display: inline-block; }
+          .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_left form .form_field .phone_number_wrapper {
+            display: flex;
+            align-items: center; }
+            .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_left form .form_field .phone_number_wrapper select {
+              height: 56px;
+              background: #ffffff;
+              border: 1px solid rgba(106, 97, 111, 0.2);
+              box-sizing: border-box;
+              border-radius: 10px;
+              margin-right: 10px;
+              flex: 0 1 20%; }
+            .dashboard_setting .dashboard_setting_bottom .dashboard_setting_bottom_organization .dashboard_setting_bottom_left form .form_field .phone_number_wrapper input {
+              flex: 0 1 80%; }

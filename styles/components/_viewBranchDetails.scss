@@ -1,0 +1,71 @@
+.view_branch_details_card {
+  width: 1109px;
+  height: 695px;
+  background: #ffffff;
+  border-radius: 16px;
+  &.department_card {
+    height: 577px;
+    & .update {
+      margin-top: 41px;
+    }
+  }
+  & .view_branch_details_card_content {
+    padding-left: 56px;
+    margin-top: 28px;
+    border-bottom: 1px solid rgba(106, 97, 111, 0.2);
+    padding-bottom: 40px;
+    & form {
+      & .form_wrapper {
+        display: flex;
+        align-items: center;
+        & .form_field {
+          display: flex;
+          flex-direction: column;
+          margin-right: 76px;
+          margin-bottom: 26px;
+          & label {
+            margin-bottom: 16px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: #6a616f;
+          }
+          & input {
+            width: 268px;
+            height: 56px;
+            background: #f3f3f3;
+            border: 1px solid rgba(106, 97, 111, 0.2);
+            box-sizing: border-box;
+            border-radius: 10px;
+          }
+          &.last {
+            margin-top: 36px;
+            & input {
+              width: 793px;
+            }
+          }
+        }
+      }
+    }
+    & .update {
+      color: #6a616f;
+      font-size: 18px;
+      line-height: 21px;
+      & h3 {
+        font-style: normal;
+        font-weight: normal;
+        margin-bottom: 15px;
+      }
+      & h1 {
+        font-style: normal;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      & p {
+        font-style: normal;
+        font-weight: normal;
+      }
+    }
+  }
+}

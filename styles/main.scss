@@ -1,7 +1,18 @@
 // basics
 @import "./basics/basic";
 
+// components
+@import "./components/subsidiary";
+@import "./components/subsidiaryAction";
+@import "./components/createSubsidiary";
+@import "./components/subsidiaryCreatedPop";
+@import "./components/cardTitle";
+@import "./components/cardFooter";
+@import "./components/viewBranchDetails";
+@import "./components/titleImportCsv";
+@import "./components/addNewBranches";
+@import "./components/systemSettingRoleManagement";
 // pages
 @import "./pages/system";
 @import "./pages/dashboard";
-@import "./pages/systemSetting"
+@import "./pages/systemSetting";

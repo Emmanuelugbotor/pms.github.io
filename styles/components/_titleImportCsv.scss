@@ -1,0 +1,25 @@
+.title_import-csv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.3rem;
+  & .title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #6a616f;
+  }
+  & .import_csv {
+    display: flex;
+    align-items: center;
+    & span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      display: inline-block;
+      color: #e43270;
+    }
+  }
+}

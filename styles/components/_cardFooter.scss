@@ -1,0 +1,13 @@
+.subsidiaryCreatedpopup_card_footer {
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+  & button {
+    width: 168px;
+    height: 56px;
+    background: #e43270;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+  }
+}

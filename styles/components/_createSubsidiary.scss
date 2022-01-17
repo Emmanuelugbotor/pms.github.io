@@ -1,0 +1,78 @@
+.create_subsidiary {
+  padding: 0 45px 41px 34px;
+  margin-top: 2.8rem;
+
+  & form {
+    & .form_wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 34px;
+      & .form_field {
+        display: flex;
+        width: 484px;
+        flex-direction: column;
+        margin-right: 46px;
+        & select {
+          height: 56px;
+          border: 1px solid rgba(106, 97, 111, 0.2);
+          border-radius: 10px;
+        }
+        & .phone_number_wrapper {
+          display: flex;
+          align-items: center;
+          & select {
+            height: 56px;
+            width: 119px;
+            border: 1px solid rgba(106, 97, 111, 0.2);
+            border-radius: 10px;
+            margin-right: 18px;
+          }
+        }
+        & input {
+          background: #ffffff;
+          border: 1px solid rgba(106, 97, 111, 0.2);
+          box-sizing: border-box;
+          border-radius: 10px;
+          height: 56px;
+          width: 100%;
+          font-family: Rubik;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 21px;
+          color: #6a616f;
+          padding-left: 10px;
+        }
+        & label {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+          color: #6a616f;
+          margin-bottom: 7px;
+        }
+      }
+    }
+    & .buttons {
+      & button {
+        width: 18.4rem;
+        height: 5.6rem;
+        border: none;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        border-radius: 10px;
+        color: #ffffff;
+        background: var(--primary-color);
+        &:last-of-type {
+          background: rgba(228, 50, 112, 0.2);
+
+          color: #e43270;
+          margin-left: 21px;
+        }
+      }
+    }
+  }
+}
